@@ -1,4 +1,4 @@
-# android-snippets
+# ![](app/src/main/res/drawable-ldpi/ic_launcher.png) android-snippets
 
 Snippet codes for Android apps.
 
