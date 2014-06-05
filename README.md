@@ -2,6 +2,46 @@
 
 Snippet codes for Android apps.
 
+## Contents
+
+* Action bar
+* Animation - Rotate like ProgressBar
+* Animation - Transition
+* Bar
+* Buttons
+* Call hook
+* Camera
+* Check available features
+* Dialog
+* EditText
+* Font
+* Link
+* Mashroom
+* Notification
+* Palette
+* Progress dialog
+* Screen spec
+* Signature check
+* SJIS
+* Spinner
+* Text size
+* Theme
+* UITableView
+* Version
+* View pager
+* XML parse
+* Zoom
+
+## Usage
+
+This project can be built by Gradle and Android Studio.
+
+### Install app with Gradle Wrapper
+
+```sh
+$ ./gradlew :app:installDebug
+```
+
 ## License
 
     Copyright 2014 Soichiro Kashima
