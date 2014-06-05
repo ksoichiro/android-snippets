@@ -1,0 +1,86 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_border">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Button"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Button.Purple"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Purple" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Button.Green"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Green" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Button.Yellow"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Yellow" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Button.Red"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Red" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Button.Red"
+            android:layout_marginTop="@dimen/space_elements"
+            android:background="@drawable/button_glossy"
+            android:text="Glossy" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/Button.Red2"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Red 2" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Button.Inverse"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Inverse" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Button.Darken"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Darken" />
+
+        <Button
+            android:id="@+id/button10"
+            style="@style/Button.Recessed"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Recessed" />
+
+        <Button
+            android:id="@+id/button11"
+            style="@style/Button.Light"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Light" />
+
+        <Button
+            android:id="@+id/button12"
+            style="@style/Button.Black"
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Black" />
+    </LinearLayout>
+
+</ScrollView>

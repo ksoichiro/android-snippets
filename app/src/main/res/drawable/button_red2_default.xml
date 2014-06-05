@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/radius_custom_button" />
+
+            <gradient
+                android:angle="270"
+                android:endColor="#FFCC0000"
+                android:startColor="#FFe21d1d" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/radius_custom_button" />
+
+            <gradient
+                android:angle="270"
+                android:endColor="#FFd30a0a"
+                android:startColor="#FFf03131" />
+
+            <stroke
+                android:width="@dimen/stroke_width_custom_button_default"
+                android:color="#00000000" />
+        </shape>
+    </item>
+
+</layer-list>

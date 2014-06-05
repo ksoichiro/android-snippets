@@ -1,0 +1,8 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Bar"
+    android:background="@drawable/bar_lightgray_gradient">
+    <TextView
+        android:id="@+id/text"
+        style="@style/TextInBar.Light" />
+</LinearLayout>

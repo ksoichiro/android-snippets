@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="transition_anim" type="anim">@android:anim/accelerate_decelerate_interpolator</item>
+
+</resources>

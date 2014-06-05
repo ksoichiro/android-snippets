@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_tab2"
+        android:icon="@drawable/ic_action_menu2"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/menu_tab2"/>
+
+</menu>

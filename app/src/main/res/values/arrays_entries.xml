@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sample_entries">
+        <item>Please select</item>
+        <item>entry 1</item>
+        <item>entry 2</item>
+        <item>entry 3</item>
+    </string-array>
+
+</resources>

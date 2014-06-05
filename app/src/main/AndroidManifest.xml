@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snippet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.snippet.app.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.ButtonActivity"
+            android:label="@string/title_activity_button" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.SignatureCheck"
+            android:label="@string/title_activity_signature_check" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.ViewPagerActivity"
+            android:label="@string/title_activity_view_pager" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.ProgressDialogActivity"
+            android:label="@string/title_activity_progress_dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.UITableViewActivity"
+            android:label="@string/title_activity_uitable_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.DialogActivity"
+            android:label="@string/title_activity_dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.ActionBarCompatActivity"
+            android:label="@string/title_activity_action_bar_compat" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.VersionActivity"
+            android:label="@string/title_activity_version" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.ScreenSpecActivity"
+            android:label="@string/title_activity_screen_spec" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.XmlParseActivity"
+            android:label="@string/title_activity_xml_parse" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.TextSizeActivity"
+            android:label="@string/title_activity_text_size" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.PaletteActivity"
+            android:label="@string/title_activity_palette" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.NotificationActivity"
+            android:label="@string/title_activity_notification" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.NotificationResultActivity"
+            android:label="@string/title_activity_notification_result"
+            android:parentActivityName=".app.NotificationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".app.NotificationActivity" />
+        </activity>
+        <activity
+            android:name="com.snippet.app.CheckFeatureActivity"
+            android:label="@string/title_activity_check_feature" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.AnimationRotateActivity"
+            android:label="@string/title_activity_animation_rotate" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.AnimationTransitionActivity"
+            android:label="@string/title_activity_animation_transition" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.EditTextActivity"
+            android:label="@string/title_activity_edit_text" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.BarActivity"
+            android:label="@string/title_activity_bar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.FontActivity"
+            android:label="@string/title_activity_font" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.ThemeActivity"
+            android:label="@string/title_activity_theme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.SpinnerActivity"
+            android:label="@string/title_activity_spinner" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.SjisActivity"
+            android:label="@string/title_activity_sjis" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.ZoomActivity"
+            android:label="@string/title_activity_zoom" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.ZoomedActivity"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="com.snippet.app.LinkActivity"
+            android:label="@string/title_activity_link" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.CallHookActivity"
+            android:label="@string/title_activity_call_hook" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snippet.app.CallHookHookedActivity"
+            android:label="@string/title_activity_call_hook" >
+        </activity>
+        <activity
+            android:name="com.snippet.app.MashroomActivity"
+            android:label="@string/title_activity_mashroom" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.snippet.sample" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.snippet.service.OutgoingCallHookService" />
+    </application>
+
+</manifest>

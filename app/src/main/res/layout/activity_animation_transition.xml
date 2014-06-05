@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_slide_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slide Horizontal" />
+
+    <Button
+        android:id="@+id/button_cover_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cover Horizontal" />
+
+    <Button
+        android:id="@+id/button_cover_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cover Vertical" />
+
+    <Button
+        android:id="@+id/button_fade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fade" />
+
+</LinearLayout>

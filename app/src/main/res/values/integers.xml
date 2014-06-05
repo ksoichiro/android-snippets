@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="transition_anim_duration" type="integer">300</item>
+    <item name="fade_anim_duration" type="integer">300</item>
+
+</resources>

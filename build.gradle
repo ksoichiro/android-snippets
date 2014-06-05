@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "$System.env.ANDROID_HOME/extras/android/m2repository"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.10.+'
+        classpath 'com.android.support:support-v4:19.1.+'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven {
+            url "$System.env.ANDROID_HOME/extras/android/m2repository"
+        }
+    }
+}

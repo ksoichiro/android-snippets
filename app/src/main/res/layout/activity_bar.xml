@@ -1,0 +1,116 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Blue -->
+
+        <LinearLayout
+            style="@style/Bar"
+            android:layout_marginTop="@dimen/space_elements"
+            android:background="#FF33B5E5">
+            <TextView
+                style="@style/TextInBar"
+                android:text="Solid" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_bevel">
+            <TextView
+                style="@style/TextInBar"
+                android:text="Bevel" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_gradient">
+            <TextView
+                style="@style/TextInBar"
+                android:text="Gradient" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_gradient_center_hilighted">
+            <TextView
+                style="@style/TextInBar"
+                android:text="Gradient center hilighted" />
+        </LinearLayout>
+
+        <!-- Gray -->
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="#FF666666">
+            <TextView
+                style="@style/TextInBar"
+                android:text="Gray Solid" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_gray_bevel">
+            <TextView
+                style="@style/TextInBar"
+                android:text="Gray Bevel" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_gray_gradient">
+            <TextView
+                style="@style/TextInBar"
+                android:text="Gray Gradient" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_gray_gradient_center_hilighted">
+            <TextView
+                style="@style/TextInBar"
+                android:text="Gray Gradient center hilighted" />
+        </LinearLayout>
+
+        <!-- Light Gray -->
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="#FFCCCCCC">
+            <TextView
+                style="@style/TextInBar.Light"
+                android:textColor="#333333"
+                android:text="Gray Solid" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_lightgray_bevel">
+            <TextView
+                style="@style/TextInBar.Light"
+                android:text="Gray Bevel" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_lightgray_gradient">
+            <TextView
+                style="@style/TextInBar.Light"
+                android:text="Gray Gradient" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Bar"
+            android:background="@drawable/bar_lightgray_gradient_center_hilighted">
+            <TextView
+                style="@style/TextInBar.Light"
+                android:text="Gray Gradient center hilighted" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

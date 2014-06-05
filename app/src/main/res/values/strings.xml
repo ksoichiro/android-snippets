@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Snippets</string>
+    <string name="title_activity_main">Android Snippets</string>
+    <string name="title_activity_button">Buttons</string>
+    <string name="title_activity_signature_check">Signature check</string>
+    <string name="title_activity_view_pager">View pager</string>
+    <string name="title_activity_progress_dialog">Progress dialog</string>
+    <string name="title_activity_uitable_view">UITableView</string>
+    <string name="title_activity_dialog">Dialog</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_action_bar_compat">Action bar</string>
+    <string name="title_activity_version">Version</string>
+    <string name="title_activity_screen_spec">Screen spec</string>
+    <string name="title_activity_xml_parse">XML parse</string>
+    <string name="title_activity_text_size">Text size</string>
+    <string name="title_activity_palette">Palette</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_notification_result">Notification result</string>
+    <string name="title_activity_check_feature">Check available features</string>
+    <string name="title_activity_animation_rotate">Animation - Rotate like ProgressBar</string>
+    <string name="title_activity_animation_transition">Animation - Transition</string>
+    <string name="title_activity_edit_text">EditText</string>
+    <string name="title_activity_bar">Bar</string>
+    <string name="title_activity_font">Font</string>
+    <string name="title_activity_theme">Theme</string>
+    <string name="title_activity_spinner">Spinner</string>
+    <string name="title_activity_sjis">SJIS</string>
+    <string name="title_activity_link">Link</string>
+    <string name="title_activity_call_hook">Call hook</string>
+    <string name="title_activity_mashroom">Mashroom</string>
+    <string name="title_activity_zoom">Zoom</string>
+    <string name="title_fragment_tab1">Tab1</string>
+    <string name="title_fragment_tab2">Tab2</string>
+    <string name="title_fragment_tab3">Tab3</string>
+    <string name="msg_progress">Please wait..</string>
+    <string name="menu_tab1">M1</string>
+    <string name="menu_tab1_2">M1–2</string>
+    <string name="menu_tab2">M2</string>
+    <string name="menu_tab3">M3</string>
+    <string name="pangram">The quick brown fox jumps over the lazy dog.</string>
+    <string name="entry_format_sample_spinner3">Entry %1$d-%2$s</string>
+
+</resources>

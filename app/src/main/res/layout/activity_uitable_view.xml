@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uitable_container" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_border" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_elements"
+            android:text="Only 1 element" />
+
+        <TextView
+            style="@style/UITable"
+            android:text="Content 1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_elements"
+            android:paddingTop="@dimen/space_elements"
+            android:text="More than 2 elements" />
+
+        <TextView
+            style="@style/UITable.Top"
+            android:text="Content 1" />
+
+        <TextView
+            style="@style/UITable.Middle"
+            android:text="Content 2" />
+
+        <TextView
+            style="@style/UITable.Bottom"
+            android:text="Content 3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_elements"
+            android:paddingTop="@dimen/space_elements"
+            android:text="Only 1 element (Clickable)" />
+
+        <TextView
+            style="@style/UITable"
+            android:clickable="true"
+            android:text="Content 1"
+            android:textColor="@drawable/uitable_text_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_elements"
+            android:paddingTop="@dimen/space_elements"
+            android:text="More than 2 elements (Clickable)" />
+
+        <TextView
+            style="@style/UITable.Top"
+            android:clickable="true"
+            android:text="Content 1"
+            android:textColor="@drawable/uitable_text_color" />
+
+        <TextView
+            style="@style/UITable.Middle"
+            android:clickable="true"
+            android:text="Content 2"
+            android:textColor="@drawable/uitable_text_color" />
+
+        <TextView
+            style="@style/UITable.Bottom"
+            android:clickable="true"
+            android:text="Content 3"
+            android:textColor="@drawable/uitable_text_color" />
+    </LinearLayout>
+
+</ScrollView>

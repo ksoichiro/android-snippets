@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/button_zoom"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sample" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/button_zoom"
+        android:layout_toRightOf="@id/button_zoom"
+        android:gravity="center_vertical"
+        android:text="Tap image to zoom in this activity" />
+
+    <ImageView
+        android:id="@+id/button_zoom_activity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_zoom"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sample" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/button_zoom_activity"
+        android:layout_toRightOf="@id/button_zoom_activity"
+        android:gravity="center_vertical"
+        android:text="Tap image to zoom with another activity" />
+
+</RelativeLayout>

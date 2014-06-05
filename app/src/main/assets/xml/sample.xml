@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configurations>
+    <config type="launchable">true</config>
+    <config type="version">1</config>
+    <config type="update_url">http://www.google.co.jp</config>
+</configurations>

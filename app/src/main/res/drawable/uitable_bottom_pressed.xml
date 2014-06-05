@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <corners
+        android:bottomLeftRadius="@dimen/radius_uitable"
+        android:bottomRightRadius="@dimen/radius_uitable" />
+
+    <solid android:color="@color/uitable_pressed" />
+
+    <stroke
+        android:width="@dimen/stroke_width_uitable_border"
+        android:color="@color/stroke_uitable" />
+
+    <padding
+        android:bottom="@dimen/space_elements"
+        android:left="@dimen/space_elements"
+        android:right="@dimen/space_elements"
+        android:top="@dimen/space_elements" />
+
+</shape>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@anim/transition_anim" >
+
+    <translate
+        android:duration="@integer/transition_anim_duration"
+        android:fromXDelta="5%"
+        android:fromYDelta="5%"
+        android:toXDelta="0"
+        android:toYDelta="0" />
+
+    <alpha
+        android:duration="@integer/transition_anim_duration"
+        android:fromAlpha="0.2"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:toAlpha="1.0" />
+
+</set>

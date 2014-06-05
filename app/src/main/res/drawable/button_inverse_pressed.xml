@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/radius_custom_button" />
+
+            <gradient
+                android:angle="270"
+                android:endColor="#FFCCCCCC"
+                android:startColor="#FF999999" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/radius_custom_button" />
+
+            <gradient
+                android:angle="270"
+                android:endColor="#00FFFFFF"
+                android:startColor="#CCFFFFFF" />
+
+            <stroke
+                android:width="@dimen/stroke_width_custom_button_default"
+                android:color="#00000000" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/radius_custom_button" />
+
+            <gradient
+                android:angle="270"
+                android:endColor="#CC333333"
+                android:startColor="#00FFFFFF" />
+
+            <stroke
+                android:width="@dimen/stroke_width_custom_button_default"
+                android:color="#00000000" />
+        </shape>
+    </item>
+    <item android:top="0.5dp" android:bottom="0.5dp">
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/radius_custom_button" />
+
+            <gradient
+                android:angle="270"
+                android:endColor="#FFF6F6F6"
+                android:startColor="#FFCCCCCC" />
+
+            <stroke
+                android:width="@dimen/stroke_width_custom_button_default"
+                android:color="#00000000" />
+        </shape>
+    </item>
+
+</layer-list>

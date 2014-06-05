@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="uitable_container">#BCD2EE</color>
+    <color name="stroke_uitable">#666666</color>
+    <color name="uitable_default">#FFFFFF</color>
+    <color name="uitable_pressed">#6dcaec</color>
+    <color name="actionbar_title_color">#224894</color>
+    <color name="text_edit_text">#333333</color>
+
+</resources>

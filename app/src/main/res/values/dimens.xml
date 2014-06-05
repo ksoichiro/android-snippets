@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="height_element">48dp</dimen>
+    <dimen name="height_element_except_padding">42dp</dimen>
+    <dimen name="space_border">16dp</dimen>
+    <dimen name="space_elements">8dp</dimen>
+    <dimen name="space_button_border">4dp</dimen>
+    <dimen name="radius_custom_button">8dp</dimen>
+    <dimen name="radius_uitable">8dp</dimen>
+    <dimen name="stroke_width_custom_button_default">1dp</dimen>
+    <dimen name="stroke_width_custom_button_pressed">2dp</dimen>
+    <dimen name="stroke_width_uitable_border">1dp</dimen>
+    <dimen name="stroke_width_row">1dp</dimen>
+    <dimen name="stroke_width_edittext_default">1dp</dimen>
+    <dimen name="stroke_width_edittext_focused">2dp</dimen>
+    <dimen name="margin_top_uitable_rows">-2dp</dimen>
+    <dimen name="actionbar_compat_height">48dp</dimen>
+    <dimen name="actionbar_compat_button_width">48dp</dimen>
+    <dimen name="actionbar_compat_button_home_width">56dp</dimen>
+
+</resources>

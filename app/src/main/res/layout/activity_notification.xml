@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_border" >
+
+        <Button
+            style="@style/Button"
+            android:onClick="onButton1"
+            android:padding="4dp"
+            android:text="Default" />
+
+        <Button
+            style="@style/Button"
+            android:layout_marginTop="@dimen/space_elements"
+            android:onClick="onButton2"
+            android:padding="4dp"
+            android:text="Silent" />
+
+        <Button
+            style="@style/Button"
+            android:layout_marginTop="@dimen/space_elements"
+            android:onClick="onButton3"
+            android:padding="4dp"
+            android:text="Custom icon" />
+
+        <Button
+            style="@style/Button"
+            android:layout_marginTop="@dimen/space_elements"
+            android:onClick="onButton4"
+            android:padding="4dp"
+            android:text="Update" />
+
+        <Button
+            style="@style/Button"
+            android:layout_marginTop="@dimen/space_elements"
+            android:onClick="onButton5"
+            android:padding="4dp"
+            android:text="Light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/Button"
+                android:layout_marginTop="@dimen/space_elements"
+                android:layout_weight="1"
+                android:onClick="onButton6"
+                android:padding="4dp"
+                android:text="Ongoing" />
+
+            <Button
+                style="@style/Button"
+                android:layout_marginLeft="@dimen/space_elements"
+                android:layout_marginTop="@dimen/space_elements"
+                android:layout_weight="1"
+                android:onClick="onButton6Dismiss"
+                android:padding="4dp"
+                android:text="Dismiss" />
+        </LinearLayout>
+
+        <Button
+            style="@style/Button"
+            android:layout_marginTop="@dimen/space_elements"
+            android:onClick="onButton7"
+            android:padding="4dp"
+            android:text="Only alert once" />
+    </LinearLayout>
+
+</ScrollView>

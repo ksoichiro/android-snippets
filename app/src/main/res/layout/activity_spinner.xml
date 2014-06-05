@@ -1,0 +1,67 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_border">
+
+        <TextView
+            android:text="Selection 1: defined in resource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_marginTop="@dimen/space_elements"
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sample_entries" />
+
+        <Button
+            android:layout_marginTop="@dimen/space_elements"
+            android:id="@+id/btnCheck"
+            style="@style/Button"
+            android:text="Check" />
+
+        <TextView
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Selection 2: defined programmatically"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_marginTop="@dimen/space_elements"
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="@dimen/space_elements"
+            android:id="@+id/btnCheck2"
+            style="@style/Button"
+            android:text="Check" />
+
+        <TextView
+            android:layout_marginTop="@dimen/space_elements"
+            android:text="Selection 3: entry format is defined in resource, real entries and values are defined programmatically"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_marginTop="@dimen/space_elements"
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="@dimen/space_elements"
+            android:id="@+id/btnCheck3"
+            style="@style/Button"
+            android:text="Check" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_theme1"
+        android:title="Based on Theme.Light"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/menu_theme2"
+        android:title="Based on Theme.Black"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/menu_theme3"
+        android:title="Based on Theme.Sherlock.Light"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/menu_theme4"
+        android:title="Based on Theme.Sherlock"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

@@ -1,0 +1,238 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_border">
+
+        <EditText
+            android:id="@+id/et1"
+            style="@style/EditText"
+            android:hint="none"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/et2"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="text"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et3"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textCapCharacters"
+            android:inputType="textCapCharacters" />
+
+        <EditText
+            android:id="@+id/et4"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textCapWords"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/et5"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textCapSentences"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/et6"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textAutoCorrect"
+            android:inputType="textAutoCorrect" />
+
+        <EditText
+            android:id="@+id/et7"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textAutoComplete"
+            android:inputType="textAutoComplete" />
+
+        <EditText
+            android:id="@+id/et8"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textMultiLine"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/et9"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textImeMultiLine"
+            android:inputType="textImeMultiLine" />
+
+        <EditText
+            android:id="@+id/et10"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textNoSuggestions"
+            android:inputType="textNoSuggestions" />
+
+        <EditText
+            android:id="@+id/et11"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textUri"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/et12"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textEmailAddress"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et13"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textEmailSubject"
+            android:inputType="textEmailSubject" />
+
+        <EditText
+            android:id="@+id/et14"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textShortMessage"
+            android:inputType="textShortMessage" />
+
+        <EditText
+            android:id="@+id/et15"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textLongMessage"
+            android:inputType="textLongMessage" />
+
+        <EditText
+            android:id="@+id/et16"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textPersonName"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et17"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textPostalAddress"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/et18"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textPassword"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et19"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textVisiblePassword"
+            android:inputType="textVisiblePassword" />
+
+        <EditText
+            android:id="@+id/et20"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textWebEditText"
+            android:inputType="textWebEditText" />
+
+        <EditText
+            android:id="@+id/et21"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textFilter"
+            android:inputType="textFilter" />
+
+        <EditText
+            android:id="@+id/et22"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textPhonetic"
+            android:inputType="textPhonetic" />
+
+        <EditText
+            android:id="@+id/et23"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textWebEmailAddress"
+            android:inputType="textWebEmailAddress" />
+
+        <EditText
+            android:id="@+id/et24"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="textWebPassword"
+            android:inputType="textWebPassword" />
+
+        <EditText
+            android:id="@+id/et25"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et26"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="numberSigned"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/et27"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="numberDecimal"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/et28"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="numberPassword"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/et29"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/et30"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="datetime"
+            android:inputType="datetime" />
+
+        <EditText
+            android:id="@+id/et31"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="date"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/et32"
+            style="@style/EditText"
+            android:layout_marginTop="@dimen/space_elements"
+            android:hint="time"
+            android:inputType="time" />
+
+    </LinearLayout>
+
+</ScrollView>
