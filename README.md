@@ -38,6 +38,11 @@ Snippet codes for Android apps.
 
 Example app using 'ProductFlavors'.
 
+### SimpleAlertDialog for Android
+
+Android application showing how to use
+[SimpleAlertDialog for Android](https://github.com/ksoichiro/SimpleAlertDialog-for-Android).
+
 ## Usage
 
 This project can be built by Gradle and Android Studio.
@@ -64,6 +69,14 @@ $ ./gradlew :app-flavor:installProductionDebug
 
 ```sh
 $ ./gradlew :app-flavor:installDevelopmentDebug
+```
+
+### SimpleAlertDialog for Android
+
+Install app with Gradle Wrapper.
+
+```sh
+$ ./gradlew :app-simplealertdialog:installDebug
 ```
 
 ## License
