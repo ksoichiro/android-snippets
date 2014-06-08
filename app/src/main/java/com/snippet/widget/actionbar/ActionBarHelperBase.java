@@ -144,11 +144,11 @@ public class ActionBarHelperBase extends ActionBarHelper {
     /**
      * Action bar helper code to be run in {@link Activity#onCreateOptionsMenu(android.view.Menu)}.
      *
-     * NOTE: This code will mark on-screen menu items as invisible.
+     * NOTE: This code will mark on-screen main items as invisible.
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Hides on-screen action items from the options menu.
+        // Hides on-screen action items from the options main.
         for (Integer id : mActionItemIds) {
             MenuItem item = menu.findItem(id);
             if (item != null) {
@@ -184,8 +184,8 @@ public class ActionBarHelperBase extends ActionBarHelper {
     }
 
     /**
-     * Adds an action button to the compatibility action bar, using menu information from a {@link
-     * android.view.MenuItem}. If the menu item ID is <code>menu_refresh</code>, the menu item's
+     * Adds an action button to the compatibility action bar, using main information from a {@link
+     * android.view.MenuItem}. If the main item ID is <code>menu_refresh</code>, the main item's
      * state can be changed to show a loading spinner using
      * {@link com.example.android.actionbarcompat.ActionBarHelperBase#setRefreshActionItemState(boolean)}.
      */
@@ -208,7 +208,7 @@ public class ActionBarHelperBase extends ActionBarHelper {
                                 ? R.dimen.actionbar_compat_button_home_width
                                 : R.dimen.actionbar_compat_button_width),
                 ViewGroup.LayoutParams.MATCH_PARENT));
-        // Set id to reconstruct options menu when tabs has been changed.
+        // Set id to reconstruct options main when tabs has been changed.
         actionButton.setId(itemId);
         if (itemId == R.id.menu_refresh) {
             actionButton.setId(R.id.actionbar_compat_item_refresh);
@@ -270,7 +270,7 @@ public class ActionBarHelperBase extends ActionBarHelper {
         }
 
         /**
-         * Loads action bar metadata from a menu resource, storing a list of menu item IDs that
+         * Loads action bar metadata from a main resource, storing a list of main item IDs that
          * should be shown on-screen (i.e. those with showAsAction set to always or ifRoom).
          * @param menuResId
          */
@@ -313,9 +313,9 @@ public class ActionBarHelperBase extends ActionBarHelper {
                     eventType = parser.next();
                 }
             } catch (XmlPullParserException e) {
-                throw new InflateException("Error inflating menu XML", e);
+                throw new InflateException("Error inflating main XML", e);
             } catch (IOException e) {
-                throw new InflateException("Error inflating menu XML", e);
+                throw new InflateException("Error inflating main XML", e);
             } finally {
                 if (parser != null) {
                     parser.close();

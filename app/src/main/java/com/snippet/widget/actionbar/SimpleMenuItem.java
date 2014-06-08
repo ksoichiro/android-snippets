@@ -28,7 +28,7 @@ import android.view.View;
 /**
  * A <em>really</em> dumb implementation of the {@link android.view.MenuItem} interface, that's only
  * useful for our actionbar-compat purposes. See
- * <code>com.android.internal.view.menu.MenuItemImpl</code> in AOSP for a more complete
+ * <code>com.android.internal.view.main.MenuItemImpl</code> in AOSP for a more complete
  * implementation.
  */
 public class SimpleMenuItem implements MenuItem {
@@ -113,7 +113,7 @@ public class SimpleMenuItem implements MenuItem {
         return mEnabled;
     }
 
-    // No-op operations. We use no-ops to allow inflation from menu XML.
+    // No-op operations. We use no-ops to allow inflation from main XML.
 
     public int getGroupId() {
         // Noop

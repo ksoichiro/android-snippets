@@ -30,7 +30,7 @@ import java.util.ArrayList;
 /**
  * A <em>really</em> dumb implementation of the {@link android.view.Menu} interface, that's only
  * useful for our actionbar-compat purposes. See
- * <code>com.android.internal.view.menu.MenuBuilder</code> in AOSP for a more complete
+ * <code>com.android.internal.view.main.MenuBuilder</code> in AOSP for a more complete
  * implementation.
  */
 public class SimpleMenu implements Menu {
@@ -71,7 +71,7 @@ public class SimpleMenu implements Menu {
     }
 
     /**
-     * Adds an item to the menu.  The other add methods funnel to this.
+     * Adds an item to the main.  The other add methods funnel to this.
      */
     private MenuItem addInternal(int itemId, int order, CharSequence title) {
         final SimpleMenuItem item = new SimpleMenuItem(this, itemId, order, title);

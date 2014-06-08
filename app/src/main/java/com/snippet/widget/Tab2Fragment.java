@@ -51,8 +51,8 @@ public class Tab2Fragment extends ActionBarFragment {
 
     @Override
     public void onCreateOptionsMenu(final Menu menu, final MenuInflater inflater) {
-        // Note: We must inflate menu for action bar first, then call super
-        // to hide options menu for Android 2.x.
+        // Note: We must inflate main for action bar first, then call super
+        // to hide options main for Android 2.x.
         inflater.inflate(R.menu.fragment_tab2, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }

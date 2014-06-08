@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/app_name" >
+
+    <PreferenceCategory android:title="About" >
+        <Preference android:title="About this app" >
+            <intent
+                android:targetClass="com.snippet.app.AboutActivity"
+                android:targetPackage="com.snippet" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -28,7 +28,7 @@ import android.view.MenuInflater;
  * A base activity that defers common functionality across app activities to an {@link
  * ActionBarHelper}.
  *
- * NOTE: dynamically marking menu items as invisible/visible is not currently supported.
+ * NOTE: dynamically marking main items as invisible/visible is not currently supported.
  *
  * NOTE: this may used with the Android Compatibility Package by extending
  * android.support.v4.app.FragmentActivity instead of {@link Activity}.
@@ -49,7 +49,7 @@ public abstract class ActionBarFragmentActivity extends FragmentActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             super.supportInvalidateOptionsMenu();
         } else {
-            // Android 2.x does not really invalidate the options menu
+            // Android 2.x does not really invalidate the options main
             // of the fragments when changing the tabs,
             // so we must clear and create it.
             if (mMenu != null) {
@@ -85,11 +85,11 @@ public abstract class ActionBarFragmentActivity extends FragmentActivity {
      * Base action bar-aware implementation for
      * {@link Activity#onCreateOptionsMenu(android.view.Menu)}.
      *
-     * Note: marking menu items as invisible/visible is not currently supported.
+     * Note: marking main items as invisible/visible is not currently supported.
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Save menu instance to invalidate menu later for Android 2.x.
+        // Save main instance to invalidate main later for Android 2.x.
         mMenu = menu;
         boolean retValue = false;
         retValue |= mActionBarHelper.onCreateOptionsMenu(menu);

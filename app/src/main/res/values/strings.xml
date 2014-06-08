@@ -30,10 +30,14 @@
     <string name="title_activity_link">Link</string>
     <string name="title_activity_call_hook">Call hook</string>
     <string name="title_activity_mashroom">Mashroom</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_about">About this app</string>
     <string name="title_activity_zoom">Zoom</string>
     <string name="title_fragment_tab1">Tab1</string>
     <string name="title_fragment_tab2">Tab2</string>
     <string name="title_fragment_tab3">Tab3</string>
+    <string name="label_copyright">&amp;copy; 2014 Soichiro Kashima All rights reserved.</string>
+    <string name="label_version">Version</string>
     <string name="msg_progress">Please wait..</string>
     <string name="menu_tab1">M1</string>
     <string name="menu_tab1_2">M1–2</string>

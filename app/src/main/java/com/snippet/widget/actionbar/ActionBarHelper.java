@@ -69,7 +69,7 @@ public abstract class ActionBarHelper {
     /**
      * Action bar helper code to be run in {@link Activity#onCreateOptionsMenu(android.view.Menu)}.
      *
-     * NOTE: Setting the visibility of menu items in <em>menu</em> is not currently supported.
+     * NOTE: Setting the visibility of main items in <em>main</em> is not currently supported.
      */
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
@@ -89,8 +89,8 @@ public abstract class ActionBarHelper {
 
     /**
      * Returns a {@link MenuInflater} for use when inflating menus. The implementation of this
-     * method in {@link ActionBarHelperBase} returns a wrapped menu inflater that can read
-     * action bar metadata from a menu resource pre-Honeycomb.
+     * method in {@link ActionBarHelperBase} returns a wrapped main inflater that can read
+     * action bar metadata from a main resource pre-Honeycomb.
      */
     public MenuInflater getMenuInflater(MenuInflater superMenuInflater) {
         return superMenuInflater;

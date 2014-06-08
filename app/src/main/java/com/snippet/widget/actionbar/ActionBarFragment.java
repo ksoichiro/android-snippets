@@ -21,7 +21,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 
 /**
- * A base fragment to keep compatibility around options menu.
+ * A base fragment to keep compatibility around options main.
  */
 public abstract class ActionBarFragment extends Fragment {
 

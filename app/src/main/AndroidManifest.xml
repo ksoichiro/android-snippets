@@ -289,6 +289,12 @@
                 <category android:name="com.snippet.sample" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.snippet.app.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="com.snippet.app.AboutActivity"
+            android:label="@string/title_activity_about" />
 
         <service android:name="com.snippet.service.OutgoingCallHookService" />
     </application>
