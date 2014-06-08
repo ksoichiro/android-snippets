@@ -38,6 +38,11 @@ Snippet codes for Android apps.
 
 Example app using 'ProductFlavors'.
 
+### AndroidFormEnhancer
+
+Android application showing how to use
+[AndroidFormEnhancer](https://github.com/ksoichiro/AndroidFormEnhancer).
+
 ### SimpleAlertDialog for Android
 
 Android application showing how to use
@@ -74,6 +79,14 @@ $ ./gradlew :app-flavor:installProductionDebug
 
 ```sh
 $ ./gradlew :app-flavor:installDevelopmentDebug
+```
+
+### AndroidFormEnhancer
+
+Install app with Gradle Wrapper.
+
+```sh
+$ ./gradlew :app-androidformenhancer:installDebug
 ```
 
 ### SimpleAlertDialog for Android
