@@ -1,1 +1,1 @@
-include ':app', ':app-flavor', 'app-simplealertdialog'
+include ':app', ':app-flavor', ':app-richbuttons', 'app-simplealertdialog'
