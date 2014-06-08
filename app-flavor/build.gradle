@@ -13,7 +13,9 @@ android {
     }
     productFlavors {
         production
-        development
+        development {
+            applicationId "com.snippet.productflavors.development"
+        }
     }
     buildTypes {
         release {
