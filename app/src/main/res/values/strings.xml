@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Android Snippets</string>
-    <string name="title_activity_main">Android Snippets</string>
+    <string name="title_activity_main">Snippets</string>
     <string name="title_activity_button">Buttons</string>
     <string name="title_activity_signature_check">Signature check</string>
     <string name="title_activity_view_pager">View pager</string>

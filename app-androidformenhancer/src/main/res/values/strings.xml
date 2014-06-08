@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">app-androidformenhancer</string>
+    <string name="app_name">Snippets-AFE</string>
     <string name="form_default_name">Name</string>
     <string name="btn_submit">Submit</string>
 
