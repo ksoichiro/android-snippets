@@ -4,6 +4,8 @@ Snippet codes for Android apps.
 
 ## Contents
 
+### Snippets
+
 * Action bar
 * Animation - Rotate like ProgressBar
 * Animation - Transition
@@ -32,14 +34,36 @@ Snippet codes for Android apps.
 * XML parse
 * Zoom
 
+### Flavors
+
+Example app using 'ProductFlavors'.
+
 ## Usage
 
 This project can be built by Gradle and Android Studio.
 
-### Install app with Gradle Wrapper
+### Snippets
+
+Install app with Gradle Wrapper.
 
 ```sh
 $ ./gradlew :app:installDebug
+```
+
+### Flavors
+
+Install app with Gradle Wrapper.
+
+#### Production flavor
+
+```sh
+$ ./gradlew :app-flavor:installProductionDebug
+```
+
+#### Development flavor
+
+```sh
+$ ./gradlew :app-flavor:installDevelopmentDebug
 ```
 
 ## License
