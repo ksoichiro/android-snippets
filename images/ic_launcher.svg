@@ -128,41 +128,41 @@
        y2="-65.661583"
        gradientTransform="matrix(0.76968216,0,0,0.76968216,116.9699,118.36431)" />
     <filter
-       id="filter5461"
+       id="filter3870"
        inkscape:label="Combined lighting"
        inkscape:menu="Bevels"
        inkscape:menu-tooltip="Basic specular bevel to use for building textures"
        color-interpolation-filters="sRGB">
       <feGaussianBlur
-         id="feGaussianBlur5463"
+         id="feGaussianBlur3872"
          stdDeviation="6"
          in="SourceGraphic"
          result="result0" />
       <feDiffuseLighting
-         id="feDiffuseLighting5465"
+         id="feDiffuseLighting3874"
          lighting-color="rgb(255,255,255)"
          diffuseConstant="1"
          surfaceScale="4"
          result="result5">
         <feDistantLight
-           id="feDistantLight5467"
+           id="feDistantLight3876"
            elevation="45"
            azimuth="235" />
       </feDiffuseLighting>
       <feComposite
-         id="feComposite5469"
+         id="feComposite3878"
          in2="SourceGraphic"
          k1="1.4"
          in="result5"
          result="fbSourceGraphic"
          operator="arithmetic" />
       <feGaussianBlur
-         id="feGaussianBlur5471"
+         id="feGaussianBlur3880"
          result="result0"
          in="fbSourceGraphic"
          stdDeviation="6" />
       <feSpecularLighting
-         id="feSpecularLighting5473"
+         id="feSpecularLighting3882"
          specularExponent="25"
          specularConstant="1"
          surfaceScale="4"
@@ -170,20 +170,20 @@
          result="result1"
          in="result0">
         <feDistantLight
-           id="feDistantLight5475"
+           id="feDistantLight3884"
            azimuth="235"
            elevation="45" />
       </feSpecularLighting>
       <feComposite
-         id="feComposite5477"
-         in2="result91"
+         id="feComposite3886"
+         in2="result1"
          k3="1"
          k2="1"
          operator="arithmetic"
          result="result4"
          in="fbSourceGraphic" />
       <feComposite
-         id="feComposite5479"
+         id="feComposite3888"
          in2="SourceGraphic"
          operator="in"
          result="result2"
@@ -197,15 +197,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="364.30375"
-     inkscape:cy="520"
+     inkscape:zoom="0.35"
+     inkscape:cx="877.02433"
+     inkscape:cy="358.37559"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3863"
      showgrid="false"
      width="1024px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1058"
+     inkscape:window-width="1280"
+     inkscape:window-height="756"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0" />
@@ -227,30 +227,43 @@
      transform="translate(0,-28.362183)"
      style="display:inline">
     <g
-       id="g4910"
-       transform="matrix(0.82498874,0,0,0.82498874,108.12568,95.042769)"
-       style="filter:url(#filter5461)">
-      <path
-         id="rect4869"
-         transform="translate(0,28.362183)"
-         d="m 165,165 0,694 694,0 0,-210.5625 C 836.08631,661.51576 809.55319,669 781.28125,669 c -86.70871,0 -157,-70.29129 -157,-157 0,-86.7087 70.29129,-157 157,-157 28.27194,0 54.80506,7.48425 77.71875,20.5625 L 859,165 165,165 z"
-         style="fill:#0099cc;fill-opacity:1;stroke:none"
-         inkscape:connector-curvature="0" />
+       id="g3863"
+       style="filter:url(#filter3870)">
       <path
          inkscape:connector-curvature="0"
          id="path4891"
-         d="m 243.18779,540.36217 c 0,86.70871 -70.29129,157.00001 -156.999996,157.00001 -86.708709,0 -157.000003,-70.2913 -157.000003,-157.00001 0,-86.7087 70.291294,-156.99999 157.000003,-156.99999 86.708706,0 156.999996,70.29129 156.999996,156.99999 z"
-         style="fill:#0099cc;fill-opacity:1;stroke:none" />
+         d="m 313.73213,650.11497 c 0,71.53371 -57.98952,129.52324 -129.52323,129.52324 -71.53371,0 -129.523235,-57.98953 -129.523235,-129.52324 0,-71.53371 57.989525,-129.52323 129.523235,-129.52323 71.53371,0 129.52323,57.98952 129.52323,129.52323 z"
+         style="fill:#0099cc;fill-opacity:1;stroke:none;filter:url(#filter5461)" />
       <path
-         style="fill:#0099cc;fill-opacity:1;stroke:none"
-         d="m 669,95.32134 c 0,86.70871 -70.2913,157.00001 -157,157.00001 -86.70871,0 -157,-70.2913 -157,-157.00001 0,-86.7086999 70.29129,-156.99999 157,-156.99999 86.7087,0 157,70.2912901 157,156.99999 z"
+         style="fill:#0099cc;fill-opacity:1;stroke:none;filter:url(#filter5461)"
+         d="m 745.83461,204.16939 c 0,71.53371 -57.98953,129.52324 -129.52323,129.52324 -71.53371,0 -129.52323,-57.98953 -129.52323,-129.52324 0,-71.5337 57.98952,-129.523218 129.52323,-129.523218 71.5337,0 129.52323,57.989518 129.52323,129.523218 z"
          id="path4901"
          inkscape:connector-curvature="0" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4903"
-         d="m 669,984.25558 c 0,86.70872 -70.2913,157.00002 -157,157.00002 -86.70871,0 -157,-70.2913 -157,-157.00002 0,-86.7087 70.29129,-156.99999 157,-156.99999 86.7087,0 157,70.29129 157,156.99999 z"
+      <rect
+         y="274.07819"
+         x="237.31435"
+         height="732"
+         width="732"
+         id="rect3784"
          style="fill:#0099cc;fill-opacity:1;stroke:none" />
-    </g>
+      <path
+         id="rect3786"
+         transform="translate(0,28.362183)"
+         d="M 755.375 245.71875 L 237.3125 763.75 L 237.3125 977.71875 L 488.1875 977.71875 L 969.3125 496.625 L 969.3125 245.71875 L 755.375 245.71875 z "
+         style="fill:#50c0e9;fill-opacity:1;stroke:none" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3018"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+         transform="matrix(1.0714693,-1.0762122,1.0714693,1.0762122,-773.19105,715.23584)"><flowRegion
+           id="flowRegion3020"><rect
+             id="rect3022"
+             width="737.14288"
+             height="357.14285"
+             x="308.57144"
+             y="518.28571"
+             style="text-align:center;text-anchor:middle;fill:#ffffff" /></flowRegion><flowPara
+           id="flowPara3024"
+           style="font-size:128px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Impact;-inkscape-font-specification:Impact Bold;fill:#ffffff">snippets</flowPara></flowRoot>    </g>
   </g>
 </svg>
