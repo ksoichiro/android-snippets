@@ -43,6 +43,11 @@ Example app using 'ProductFlavors'.
 Android application showing how to use
 [SimpleAlertDialog for Android](https://github.com/ksoichiro/SimpleAlertDialog-for-Android).
 
+### RichButtons
+
+Android application showing how to use
+[RichButtons](https://github.com/ksoichiro/RichButtons).
+
 ## Usage
 
 This project can be built by Gradle and Android Studio.
@@ -77,6 +82,14 @@ Install app with Gradle Wrapper.
 
 ```sh
 $ ./gradlew :app-simplealertdialog:installDebug
+```
+
+### RichButtons
+
+Install app with Gradle Wrapper.
+
+```sh
+$ ./gradlew :app-richbuttons:installDebug
 ```
 
 ## License
