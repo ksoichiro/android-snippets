@@ -28,6 +28,7 @@
     <string name="title_activity_spinner">Spinner</string>
     <string name="title_activity_sjis">SJIS</string>
     <string name="title_activity_link">Link</string>
+    <string name="title_activity_json_export">JSON Export</string>
     <string name="title_activity_call_hook">Call hook</string>
     <string name="title_activity_mashroom">Mashroom</string>
     <string name="title_activity_settings">Settings</string>
