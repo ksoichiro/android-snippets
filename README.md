@@ -1,4 +1,5 @@
 # ![](app/src/main/res/drawable-ldpi/ic_launcher.png) android-snippets
+[![Build Status](https://travis-ci.org/ksoichiro/android-snippets.svg?branch=master)](https://travis-ci.org/ksoichiro/android-snippets)
 
 Snippet codes for Android apps.
 
