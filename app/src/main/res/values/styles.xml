@@ -1,6 +1,8 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppTheme" parent="android:Theme.Light" />
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="viStyles">@style/CustomViewIndicator</item>
+    </style>
 
     <style name="AppThemeDark" parent="android:Theme.Black" />
 
@@ -178,6 +180,11 @@
 
     <style name="Widget.Styled.Dark.ActionBar.Title" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
         <item name="android:textColor">#EEEEEE</item>
+    </style>
+
+    <style name="CustomViewIndicator">
+        <item name="vi_radius">@dimen/custom_vi_radius</item>
+        <item name="vi_distance">@dimen/custom_vi_distance</item>
     </style>
 
 </resources>

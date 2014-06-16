@@ -18,5 +18,7 @@
     <dimen name="actionbar_compat_height">48dp</dimen>
     <dimen name="actionbar_compat_button_width">48dp</dimen>
     <dimen name="actionbar_compat_button_home_width">56dp</dimen>
+    <dimen name="custom_vi_radius">8dp</dimen>
+    <dimen name="custom_vi_distance">32dp</dimen>
 
 </resources>

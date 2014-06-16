@@ -23,4 +23,11 @@
         <attr name="actionbarCompatProgressIndicatorStyle" format="reference" />
     </declare-styleable>
 
+    <attr name="viStyles" format="reference" />
+
+    <declare-styleable name="ViewIndicator">
+        <attr name="vi_radius" format="reference|dimension"/>
+        <attr name="vi_distance" format="reference|dimension"/>
+    </declare-styleable>
+
 </resources>

@@ -18,12 +18,16 @@ package com.snippet.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.View;
+
+import com.snippet.R;
 
 /**
  * View which has circle-formed page indicator.
@@ -32,15 +36,18 @@ import android.view.View;
  */
 public class ViewIndicator extends View {
 
-    private static final float RADIUS = 5.0f;
-    private static final float DISTANCE = 30.0f;
+    private static final float DEFAULT_RADIUS = 5.0f;
+    private static final float DEFAULT_DISTANCE = 30.0f;
 
     private int mNumOfViews;
     private int mPosition;
     private ViewPager mViewPager;
+    private float mRadius;
+    private float mDistance;
 
     public ViewIndicator(Context context) {
         super(context);
+        init(context);
     }
 
     /**
@@ -50,6 +57,7 @@ public class ViewIndicator extends View {
      */
     public ViewIndicator(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        init(context);
     }
 
     /**
@@ -58,6 +66,7 @@ public class ViewIndicator extends View {
      */
     public ViewIndicator(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context);
     }
 
     public void setPosition(final int position) {
@@ -102,14 +111,14 @@ public class ViewIndicator extends View {
         paint.setAntiAlias(true);
 
         for (int i = 0; i < mNumOfViews; i++) {
-            float cx = (getWidth() - (mNumOfViews - 1) * DISTANCE) / 2 + i * DISTANCE;
+            float cx = (getWidth() - (mNumOfViews - 1) * mDistance) / 2 + i * mDistance;
             float cy = getHeight() / 2.0f;
             if (mPosition == i) {
                 paint.setStyle(Paint.Style.FILL_AND_STROKE);
             } else {
                 paint.setStyle(Paint.Style.STROKE);
             }
-            canvas.drawCircle(cx, cy, RADIUS, paint);
+            canvas.drawCircle(cx, cy, mRadius, paint);
         }
     }
 
@@ -119,6 +128,23 @@ public class ViewIndicator extends View {
         } else {
             mNumOfViews = mViewPager.getAdapter().getCount();
         }
+    }
+
+    private void init(Context context) {
+        TypedArray a = context.getTheme().obtainStyledAttributes(null,
+                R.styleable.ViewIndicator,
+                R.attr.viStyles, 0);
+        float radiusDp = a.getDimension(R.styleable.ViewIndicator_vi_radius, DEFAULT_RADIUS);
+        mRadius = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, radiusDp, getResources().getDisplayMetrics());
+        if (mRadius <= 0) {
+            mRadius = DEFAULT_RADIUS;
+        }
+        float distanceDp = a.getDimension(R.styleable.ViewIndicator_vi_distance, DEFAULT_DISTANCE);
+        mDistance = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, distanceDp, getResources().getDisplayMetrics());
+        if (mDistance <= 0) {
+            mDistance = DEFAULT_DISTANCE;
+        }
+        a.recycle();
     }
 
 }
