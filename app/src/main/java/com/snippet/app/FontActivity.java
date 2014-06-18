@@ -43,6 +43,7 @@ public class FontActivity extends Activity {
         String fontsDir = "fonts";
 
         try {
+            // Create font from assets
             String[] fontList = getAssets().list(fontsDir);
             for (String font : fontList) {
                 Typeface typeface = Typeface.createFromAsset(getAssets(), fontsDir + "/" + font);
@@ -50,6 +51,22 @@ public class FontActivity extends Activity {
                 TextView textView = (TextView) row.findViewById(R.id.text);
                 textView.setTypeface(typeface);
                 textView.setText(font);
+                parent.addView(row);
+            }
+
+            // Create font from font family
+            String[] fontFamilies = new String[] {
+                    "sans-serif",
+                    "sans-serif-light",
+                    "sans-serif-condensed",
+                    "sans-serif-thin",
+            };
+            for (String fontFamily : fontFamilies) {
+                Typeface typeface = Typeface.create(fontFamily, Typeface.NORMAL);
+                View row = LayoutInflater.from(this).inflate(R.layout.row, null);
+                TextView textView = (TextView) row.findViewById(R.id.text);
+                textView.setTypeface(typeface);
+                textView.setText(fontFamily);
                 parent.addView(row);
             }
         } catch (IOException e) {
