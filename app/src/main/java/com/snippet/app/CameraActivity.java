@@ -16,13 +16,12 @@
 
 package com.snippet.app;
 
-import com.snippet.R;
-
 import android.app.Activity;
 import android.hardware.Camera;
 import android.hardware.Camera.AutoFocusCallback;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -30,7 +29,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import com.snippet.R;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -38,6 +40,7 @@ import java.util.List;
 
 public class CameraActivity extends Activity {
 
+    private static final String TAG = CameraActivity.class.getSimpleName();
     private Camera myCamera;
     private boolean mClicked;
 
@@ -89,7 +92,7 @@ public class CameraActivity extends Activity {
         }
 
         public void surfaceChanged(SurfaceHolder holder, int format, int width,
-                int height) {
+                                   int height) {
             Camera.Parameters parameters = myCamera.getParameters();
 
             // Determine picture size
@@ -171,20 +174,58 @@ public class CameraActivity extends Activity {
                     + parameters.getPictureSize().height
                     + " AspectRatio: "
                     + ((double) parameters.getPictureSize().width / parameters
-                            .getPictureSize().height));
+                    .getPictureSize().height));
             Log.i("TEST", "PreviewSize: "
                     + parameters.getPreviewSize().width
                     + ", "
                     + parameters.getPreviewSize().height
                     + " AspectRatio: "
                     + ((double) parameters.getPreviewSize().width / parameters
-                            .getPreviewSize().height));
+                    .getPreviewSize().height));
             Log.i("TEST", "FocusMode: " + parameters.getFocusMode());
 
             View surface = findViewById(R.id.surface);
-            ViewGroup.LayoutParams params = (ViewGroup.LayoutParams) surface.getLayoutParams();
-            params.height = parameters.getPreviewSize().height;
-            params.width = parameters.getPreviewSize().width;
+            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) surface.getLayoutParams();
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.GINGERBREAD_MR1) {
+                params.height = parameters.getPreviewSize().height;
+                params.width = parameters.getPreviewSize().width;
+                params.rightMargin = 0;
+                params.addRule(RelativeLayout.CENTER_IN_PARENT);
+            } else {
+                DisplayMetrics metrics = getResources().getDisplayMetrics();
+                // surface
+                float ws = metrics.widthPixels -
+                        getResources().getDimensionPixelSize(R.dimen.height_element);
+                float hs = metrics.heightPixels;
+                float rs = ws / hs;
+                // preview
+                float wp = parameters.getPreviewSize().width;
+                float hp = parameters.getPreviewSize().height;
+                float rp = parameters.getPreviewSize().width / hp;
+                if (rp < rs) {
+                    Log.i(TAG, "Surface is wider than preview");
+                    params.width = (int) ws;
+                    params.height = (int) (hp * ws / wp);
+                    params.topMargin = (int) ((hs - params.height) / 2);
+                    params.bottomMargin = (int) ((hs - params.height) / 2);
+                } else {
+                    Log.i(TAG, "Preview is wider than surface");
+                    params.width = (int) (wp * hs / hp);
+                    params.height = (int) hs;
+                    params.leftMargin = (int) ((ws - params.width) / 2);
+                    params.rightMargin = (int) ((ws - params.width) / 2);
+                }
+                Log.i(TAG, "metrics.widthPixels=" + metrics.widthPixels);
+                Log.i(TAG, "metrics.heightPixels=" + metrics.heightPixels);
+                Log.i(TAG, "ws=" + ws);
+                Log.i(TAG, "hs=" + hs);
+                Log.i(TAG, "wp=" + wp);
+                Log.i(TAG, "hp=" + hp);
+                Log.i(TAG, "params.width=" + params.width);
+                Log.i(TAG, "params.height=" + params.height);
+                Log.i(TAG, "params.leftMargin=" + params.leftMargin);
+                Log.i(TAG, "params.rightMargin=" + params.rightMargin);
+            }
             surface.setLayoutParams(params);
             surface.requestLayout();
 
